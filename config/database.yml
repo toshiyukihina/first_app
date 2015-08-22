@@ -22,4 +22,11 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  host: localhost
+  encoding: utf8
+  database: first_app_production
+  username: admin
+  password: admin
+  pool: 5
+  timeout: 5000
