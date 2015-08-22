@@ -40,3 +40,8 @@ gem 'spring', '1.3.6', group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Heroku support
+group :production do
+  gem 'pg', '0.18.2'
+  gem 'rails_12factor', '0.0.3'
+end
